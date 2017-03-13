@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="clock.css">
+	<title>clock</title>
+</head>
+<body>
+<input id="hour" type="text" value="00"/>
+<input id="minute" type="text" value="00"/>
+<input id="second" type="text" value="00"/>
+<input type="button" value="set" onclick="compare()">
+<div id = 'clock'></div>
+<div id = 'base'></div>
+<div id= "bar"></div>
+</div>
+<audio id="hey" src="Heyayayay.mp3"></audio>
+<script type="text/javascript">
+function time() {
+  function displayTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    if(minutes < 10){
+    	minutes = "0" + minutes;
+    }
+    var seconds = currentTime.getSeconds();
+    if(seconds < 10){
+    	seconds = "0" + seconds;
+    }
+    var clockDiv = document.getElementById('clock');
+    clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
+  		function set(){
+		var a = document.getElementById("hour").value;
+		var b = document.getElementById("minute").value;
+		var c = document.getElementById("second").value;
+		var d = a + ":" + b + ":" + c;
+		if(d === displayTime(){
+			alert("wake up")
+    }
+    }
+		}
+	}
+  displayTime();
+  setInterval(displayTime, 1000);
+	};
+	</script>
+</body>
+</html>

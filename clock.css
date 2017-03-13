@@ -1,0 +1,36 @@
+body{
+	background: url(images/background.jpg);
+}
+#clock{
+	position: relative;
+	left: 290px;
+	top: 620px;
+	font-family: 'Nixie One', cursive;
+	color: rgb(253,95,0);
+	font-size: 100px;
+	z-index: 3;
+	}
+#base{
+	position: relative;
+	top: 210px;
+	left: 220px;
+	background: url(images/housing.jpg);
+	width: 1000px;
+	height: 500px;
+	z-index: 1;
+}
+#bar{
+	position: relative;
+	left: 280px;
+	top: 15px;
+	background-color: black;
+	width: 400px;
+	height: 100px;
+	z-index: 2;
+}
+input{
+	width: 20px;
+}
+#submit{
+	width: 40px;
+}
